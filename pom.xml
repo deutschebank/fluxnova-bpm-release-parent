@@ -241,13 +241,6 @@ limitations under the License.</license.inlineHeader>
     <url>http://www.camunda.com</url>
   </organization>
 
-  <scm>
-    <url>https://github.com/camunda/camunda-bpm-release-parent</url>
-    <connection>scm:git:git@github.com:camunda/camunda-bpm-release-parent.git</connection>
-    <developerConnection>scm:git:git@github.com:camunda/camunda-bpm-release-parent.git</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
-
   <issueManagement>
     <system>GitHub Issues</system>
     <url>https://github.com/orgs/finos/projects/116</url>
