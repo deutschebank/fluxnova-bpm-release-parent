@@ -6,17 +6,15 @@
             <username>${env.GITHUB_ACTOR}</username>
             <password>${env.GH_TOKEN}</password>
         </server>
+        <server>
+            <id>flowave-bpm-release-parent</id>
+            <username>${env.GITHUB_ACTOR}</username>
+            <password>${env.GH_TOKEN}</password>
+        </server>
+        <server>
+            <id>flowave-release-parent</id>
+            <username>${env.GITHUB_ACTOR}</username>
+            <password>${env.GH_TOKEN}</password>
+        </server>
     </servers>
-    <mirrors>
-        <mirror>
-            <id>flowave-bpm-release-parent-mirror</id>
-            <url>https://maven.pkg.github.com/finos/flowave-bpm-release-parent</url>
-            <mirrorOf>flowave-bpm-release-parent</mirrorOf>
-        </mirror>
-        <mirror>
-            <id>flowave-release-parent-mirror</id>
-            <url>https://maven.pkg.github.com/finos/flowave-release-parent</url>
-            <mirrorOf>flowave-release-parent</mirrorOf>
-        </mirror>
-    </mirrors>
 </settings>
