@@ -3,20 +3,20 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.camunda</groupId>
-    <artifactId>camunda-release-parent</artifactId>
+    <groupId>org.flowave</groupId>
+    <artifactId>flowave-release-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
     <relativePath />
   </parent>
 
-  <artifactId>camunda-bpm-release-parent</artifactId>
+  <artifactId>flowave-bpm-release-parent</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Camunda Platform - Release Parent Pom</name>
+  <name>Flowave Platform - Release Parent Pom</name>
 
   <description>
-    This pom defines the required plugins and profiles to allow a Camunda Platform release build.
+    This pom defines the required plugins and profiles to allow a Flowave Platform release build.
   </description>
 
   <properties>
@@ -51,9 +51,9 @@ limitations under the License.</license.inlineHeader>
 
     <!-- Properties for license book generation -->
     <!-- These properties can be overridden by inheriting modules
-      to generate a list of dependencies (called BOM here) 
+      to generate a list of dependencies (called BOM here)
       and attach it as a Maven artifact -->
-      
+
     <!-- set to false to generate a third party dependency bom -->
     <skip-third-party-bom>true</skip-third-party-bom>
     <!-- set the Maven scopes that should be included in the dependency bom.
@@ -80,13 +80,13 @@ limitations under the License.</license.inlineHeader>
               <include>**/ProcessApplication.xsd</include>
             </includes>
             <excludes>
-              <exclude>**/org/camunda/bpm/engine/impl/calendar/CronExpression.java</exclude>
-              <exclude>**/org/camunda/bpm/engine/impl/juel/*.java</exclude>
-              <exclude>**/org/camunda/bpm/engine/impl/javax/el/*.java</exclude>
-              <exclude>**/org/camunda/bpm/engine/spring/components/**/*.java</exclude>
-              <exclude>**/org/camunda/bpm/engine/spring/annotations/*.java</exclude>
-              <exclude>**/org/camunda/bpm/engine/impl/digest/_apacheCommonsCodec/*.java</exclude>
-              <exclude>**/org/camunda/bpm/licensecheck/_apacheCommonsCodec/*.java</exclude>
+              <exclude>**/org/flowave/bpm/engine/impl/calendar/CronExpression.java</exclude>
+              <exclude>**/org/flowave/bpm/engine/impl/juel/*.java</exclude>
+              <exclude>**/org/flowave/bpm/engine/impl/javax/el/*.java</exclude>
+              <exclude>**/org/flowave/bpm/engine/spring/components/**/*.java</exclude>
+              <exclude>**/org/flowave/bpm/engine/spring/annotations/*.java</exclude>
+              <exclude>**/org/flowave/bpm/engine/impl/digest/_apacheCommonsCodec/*.java</exclude>
+              <exclude>**/org/flowave/bpm/licensecheck/_apacheCommonsCodec/*.java</exclude>
               <exclude>**/node_modules/**</exclude>
               <exclude>.mvn/wrapper/MavenWrapperDownloader.java</exclude>
             </excludes>
@@ -135,10 +135,10 @@ limitations under the License.</license.inlineHeader>
         </plugin>
       </plugins>
     </pluginManagement>
-    
+
     <!-- Plugins used in the context of creating a license book. -->
-    <!-- If activated (see properties), these plugins create a list of 
-      non-Camunda dependencies and attach it as an artifact to the build.
+    <!-- If activated (see properties), these plugins create a list of
+      non-Flowave dependencies and attach it as an artifact to the build.
       The license book generator uses these files to create the book. -->
     <plugins>
       <plugin>
@@ -156,7 +156,7 @@ limitations under the License.</license.inlineHeader>
               <skip>${skip-third-party-bom}</skip>
               <includeScope>test</includeScope><!-- Gives all dependencies; scopes filtering is applied in the ant step -->
               <sort>true</sort>
-              <excludeGroupIds>org.camunda</excludeGroupIds>
+              <excludeGroupIds>org.flowave</excludeGroupIds>
               <outputFile>${project.build.directory}/dependencies/dependencies-generated.txt</outputFile>
             </configuration>
           </execution>
