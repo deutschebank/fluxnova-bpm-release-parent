@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.flowave</groupId>
+    <groupId>org.finos.flowave</groupId>
     <artifactId>flowave-release-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
@@ -80,13 +80,13 @@ limitations under the License.</license.inlineHeader>
               <include>**/ProcessApplication.xsd</include>
             </includes>
             <excludes>
-              <exclude>**/org/flowave/bpm/engine/impl/calendar/CronExpression.java</exclude>
-              <exclude>**/org/flowave/bpm/engine/impl/juel/*.java</exclude>
-              <exclude>**/org/flowave/bpm/engine/impl/javax/el/*.java</exclude>
-              <exclude>**/org/flowave/bpm/engine/spring/components/**/*.java</exclude>
-              <exclude>**/org/flowave/bpm/engine/spring/annotations/*.java</exclude>
-              <exclude>**/org/flowave/bpm/engine/impl/digest/_apacheCommonsCodec/*.java</exclude>
-              <exclude>**/org/flowave/bpm/licensecheck/_apacheCommonsCodec/*.java</exclude>
+              <exclude>**/org/finos/flowave/bpm/engine/impl/calendar/CronExpression.java</exclude>
+              <exclude>**/org/finos/flowave/bpm/engine/impl/juel/*.java</exclude>
+              <exclude>**/org/finos/flowave/bpm/engine/impl/javax/el/*.java</exclude>
+              <exclude>**/org/finos/flowave/bpm/engine/spring/components/**/*.java</exclude>
+              <exclude>**/org/finos/flowave/bpm/engine/spring/annotations/*.java</exclude>
+              <exclude>**/org/finos/flowave/bpm/engine/impl/digest/_apacheCommonsCodec/*.java</exclude>
+              <exclude>**/org/finos/flowave/bpm/licensecheck/_apacheCommonsCodec/*.java</exclude>
               <exclude>**/node_modules/**</exclude>
               <exclude>.mvn/wrapper/MavenWrapperDownloader.java</exclude>
             </excludes>
@@ -156,7 +156,7 @@ limitations under the License.</license.inlineHeader>
               <skip>${skip-third-party-bom}</skip>
               <includeScope>test</includeScope><!-- Gives all dependencies; scopes filtering is applied in the ant step -->
               <sort>true</sort>
-              <excludeGroupIds>org.flowave</excludeGroupIds>
+              <excludeGroupIds>org.finos.flowave</excludeGroupIds>
               <outputFile>${project.build.directory}/dependencies/dependencies-generated.txt</outputFile>
             </configuration>
           </execution>
