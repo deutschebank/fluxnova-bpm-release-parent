@@ -279,15 +279,23 @@ limitations under the License.</license.inlineHeader>
 
   <repositories>
     <repository>
-      <id>fluxnova-release-parent</id>
-      <url>https://maven.pkg.github.com/finos/fluxnova-release-parent</url>
-      <snapshots>
+      <id>central</id>
+      <name>Maven Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <releases>
         <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
       </snapshots>
     </repository>
     <repository>
-      <id>fluxnova-bpm-release-parent</id>
-      <url>https://maven.pkg.github.com/finos/fluxnova-bpm-release-parent</url>
+      <id>ossrh-snapshots</id>
+      <name>Sonatype OSSRH Snapshots</name>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
@@ -296,9 +304,9 @@ limitations under the License.</license.inlineHeader>
 
   <distributionManagement>
     <snapshotRepository>
-      <id>fluxnova-bpm-release-parent</id>
-      <name>GitHub Fluxnova Maven Packages</name>
-      <url>https://maven.pkg.github.com/finos/fluxnova-bpm-release-parent</url>
+      <id>ossrh</id>
+      <name>Sonatype OSSRH Snapshots</name>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 
